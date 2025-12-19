@@ -9,12 +9,6 @@ body{
     color: #333;
     line-height: 1.6;
 }
-header{
-    background: #35424a;
-    color: #414040;
-    padding: 20px 0;
-    text-align: center;
-}
 .nav_bar{
     display: flex;
     justify-content: start;
@@ -56,10 +50,10 @@ header{
 }
 .intro_img img{
     width: 500px;
-    height: 590px;
-    margin-left: 09px;
-    margin-top: 0px;
-    border-radius: 1%;
+    height: 580px;
+    margin: 1px 0px 0px 5px;
+    border-radius: 2%;
+    box-shadow: #7a7cc4 8px 8px 20px 5px;
 }
 .intro_text{
     margin-left: 50px;
@@ -70,7 +64,9 @@ header{
 .intro_text h1{
     font-size: 30px;
     margin-bottom: 20px;
+     margin-block-end: 0px;
 }
+
 .intro_text p{
     font-size: 18px;
     margin-bottom: 10px 20px;
@@ -80,6 +76,7 @@ header{
     font-size: 50px;
     margin-bottom: 20px;
     color: #181cff;
+    margin-block-end: -10px;
 }
 .intro_text .btn{
     background-color: #212222;
@@ -94,9 +91,64 @@ header{
     margin-top: 30px;
     transition: background-color 0.4s ease;
 }
+.intro_text .btn a{
+    text-decoration: none;
+    color: white;
+}
 .intro_text .btn:hover{
     background-color: #181cff;
     color: #000000;
     font-weight: bold;
 
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+        margin: 0px 0px 0px 0px;
+        text-wrap: ;
+
+    }
+    .nav_bar{
+        display: none;
+    }.main_section{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .intro_img img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+        margin-top: 10px;
+        border-radius: 20px;
+        box-shadow: #181cff 8px 8px 20px 5px;
+    }
+    .intro_text{
+        margin: 20px;
+        text-align: center;
+    }
+    .intro_text h1{
+        font-size: 24px;
+    }
+    .intro_text p{
+        font-size: 16px;
+    }
+    .intro_text .btn{
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 10px 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main_section{
+        flex-direction: row;
+        align-items: center;
+        height: 590px;
+    }
 }
