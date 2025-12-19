@@ -28,13 +28,75 @@ header{
 }
 .nav_icons{
     display: flex;
-    justify-content: flex-end;
     margin-left: auto;
+    margin-right: 20px;
     align-items: center;
+
+}
+.nav_icons .home a{
+    color: #181cff;
 }
 .nav_icons a{
     color: #fff;
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
+    transition: color 0.2s ease;
+}
+.nav_icons a:hover{
+    color: #181cff;
+}
+.main_section{
+    display: flex;
+    padding: 0px;
+    background-color: #111010;
+    color: #fff;
+    height: 590px;
+
+}
+.intro_img img{
+    width: 500px;
+    height: 590px;
+    margin-left: 09px;
+    margin-top: 0px;
+    border-radius: 1%;
+}
+.intro_text{
+    margin-left: 50px;
+    margin-top: 100px;
+    max-height: max-content;
+    background-color: ;
+}
+.intro_text h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.intro_text p{
+    font-size: 18px;
+    margin-bottom: 10px 20px;
+}
+
+.intro_text .f{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #181cff;
+}
+.intro_text .btn{
+    background-color: #212222;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: #181cff 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 30px;
+    transition: background-color 0.4s ease;
+}
+.intro_text .btn:hover{
+    background-color: #181cff;
+    color: #000000;
+    font-weight: bold;
+
 }
